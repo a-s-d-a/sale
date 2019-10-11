@@ -1,0 +1,30 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1570693395979'); /* IE9 */
+  src: url('iconfont.eot?t=1570693395979#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPgAAsAAAAACAwAAAORAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqDSIMYATYCJAMQCwoABCAFhG0HRxsJB1GUDkaW7Mdg204exzjFCGks6B5Bd1MkPerjJx6+xtr7u3uiqCTRyFB9OolEMmmUJBaDteYl3FWb1cCKyZzZigg50zUjwxAlReDU/Luifo+P6DvlKv8/x0yXBZgfaC5ZZaO9AY6idUB1kSF0eieMpxJel87PCbiZQNOs5ag9du1WsFOoewXiRkMqwS5iUgqqQ12oZpxYxKuKerpLXcCL8/fxLyrsSCqZeuD+Wa4aMr76v1A+2Dvo0EIQd+eAeBoZa0AhLjJdRxgvtYbR/Ky3sgHU1SW6WvD8Qr0eSZaiqmv/8siSIKrUyjZYp3Tmy80QBWpPGCSoESQHUFlAHWX3+KBSpv2IipD63eztO/1L3c3Pqv3Tzbf53ecfuwOYO7WLOJemIUQ/Gs51bR2dxzwe4YeHt4ETNTqaPzS0FZypkZGS668p6tCbM68ADr7kTvvkXb/zwnsbufHslpf66p6RkTyH2tF5tqBq4tFwqteQk3/N2/GG75NRjnBmWDUn8qEj/OmOgc+Hvgx2nmnv/3TwY1+bpbmPd2adSB/0ESfWme+z5Hq0fn0AG2B6HsJDLy+JyqGKi8EoZUv57qoctoo6fJiuejLwBHy0Vk18i3I96xoVYn0gPL1kn9c7erLg6MnaVuXuzqPk5NF3eRD78WhQNiHZQdTvWOJCC2fOCCSnwccDXGLJb9lThMQfo1Q2FSkVNv7LhS1bdMt363yb76v8k7tTKmXRvHG4x96DcdZ5HZgAAFjks8xmAAAmhzYCWOadjMvz3EnwV11tuWvK/7rjDvWNN9OeFLIwW6CZ6KGIK4ufnrhiR/lKVXMpb5kh+h1WbLIGCU3NyjPLMWimC88ICByhLokBSc0MZHVzyIJdg4qWdaiq24SmVarTW4ZIGFEaWHGMQej3AZKuT8j6dSMLdhoqRn2Hqv5goOkgPC/YshAah2wJV8pYjap2IQ0nGnndKju41ZsxUfSVUljqMPOwZNZEUWRYRDyrwkYsdXGIeTuJkmUe8ZJoQCy7HdbrRWSSRC3m5DBBlk1J4eF81jeFcaIBHOySYJVkmBpSZRdEgyMy4q3eMofE72+GEQq9SlJB2w9vHkxiplkeiRQmogJSpTJWajuV15htR0SRyXgITyIyQFjmwPRaSoSYsrdpYRxZGKFBwiRJOHXjq6rChtcYzvAYNKlXLpEiR4mKfKuILpxQaSS7RCPZBeMKGy8oKAAAAAA=') format('woff2'),
+  url('iconfont.woff?t=1570693395979') format('woff'),
+  url('iconfont.ttf?t=1570693395979') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1570693395979#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-suo:before {
+  content: "\e620";
+}
+
+.icon-changyongicon-:before {
+  content: "\e613";
+  color:#ec5196;
+}
+
+.icon-yonghu:before {
+  content: "\e610";
+}
+
