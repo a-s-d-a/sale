@@ -33,25 +33,16 @@
       </a>
     </nav>
     <div class="t_3column">
-      <a href="#/info/12409">
-        <img alt src="http://img2.yidejia.com/8/2019/03/08/9d338086ca27.jpg" />
-      </a>
-      <a href="#/info/14873">
-        <img alt src="http://img2.yidejia.com/8/2019/03/08/106d365cdb80.jpg" />
-      </a>
-      <a href="#/info/17324">
-        <img alt src="http://img2.yidejia.com/2/2019/03/08/6834263c21e17.jpg" />
+      <a @click="ha('/xiang',item)"  v-for="(item,index) in List.top.slice(0,3)" :key="index">
+        <img alt :src="'http://img2.yidejia.com/'+item.img_name" />
       </a>
     </div>
     <div class="t_2column s_2row">
-      <a href="#/info/17279" style>
-        <img alt src="http://img2.yidejia.com/8/2019/03/08/68a94ace8f68e.jpg" />
+       <a @click="ha('/xiang',item)"  v-for="(item,index) in List.top.slice(3,4)" :key="index">
+        <img alt :src="'http://img2.yidejia.com/'+item.img_name" />
       </a>
-      <a href="#/info/6742" style>
-        <img alt src="http://img2.yidejia.com/5/2019/03/08/10e6d82745ea.jpg" />
-      </a>
-      <a href="#/info/14951" style>
-        <img alt src="http://img2.yidejia.com/8/2019/03/08/10e9917fca42.jpg" />
+       <a @click="ha('/xiang',item)"  v-for="(item,index) in List.top.slice(4,)" :key="index">
+        <img alt :src="'http://img2.yidejia.com/'+item.img_name" />
       </a>
     </div>
     <fashion :list='List'></fashion>
@@ -74,6 +65,7 @@ export default {
     return {
       list: "",
       List:'',
+      itemdata:''
     };
   },
   created() {
@@ -84,7 +76,25 @@ export default {
         this.List=res.data.response;
         console.log(this.List);
       });
-  }
+  },
+   methods:{
+      ha(a,item){
+        this.$axios.get("/index.php?api=index.product.get",{
+          params:{
+            'goods_id':item.goods_id,
+          }
+        }).then((res)=>{
+              this.itemdata=res.data.response
+          console.log(this.itemdata)
+          this.$router.push({
+            path:a,
+            query:{
+            'item':this.itemdata
+          }
+          })
+        })
+      }
+    }
 };
 </script>
 

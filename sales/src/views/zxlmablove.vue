@@ -2,7 +2,7 @@
   <div class="m_recommend">
     <h3>— 您可能喜欢 —</h3>
     <div class="g_links">
-      <a :href="'#/info/'+item.goods_id" v-for="(item,index) in list" :key="index">
+      <a @click="ha('/1',item)" v-for="(item,index) in list" :key="index">
         <img alt :src="'https://img2.yidejia.com/'+item.img_name" />
         <footer>
           <h4>{{item.goods_name}}</h4>
@@ -18,6 +18,17 @@ export default {
         list:{
             type:Object
         }
+    },
+    methods:{
+       ha(a,item){
+          this.$router.push({
+            path:a,
+            query:{
+            'item':item
+          }
+          })
+        
+      }
     }
 };
 </script>

@@ -21,11 +21,14 @@
               <van-icon class="s_index" name='wap-home-o'/>
               <b>首页</b>
             </a>
-            <a href="#/cart">
-              <!-- <i></i> -->
+            
+            <router-link to="/car"> <van-icon  name='shopping-cart-o'/>
+              <b>购物车</b></router-link>
+            <!-- <a href="/car">
+              <i></i> 
                <van-icon  name='shopping-cart-o'/>
               <b>购物车</b>
-            </a>
+            </a> -->
             <a href="#/user/index">
               <!-- <i></i> -->
               <van-icon  name='manager-o'/>
