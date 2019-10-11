@@ -16,7 +16,7 @@
         <div>
           <a class="t_nav" @click="ha"><van-icon  name="bars"/></a>
           <nav class="g_navList" v-if="isshow">
-            <a href="#/index">
+            <a href="/2">
               <!-- <i class="s_index"></i> -->
               <van-icon class="s_index" name='wap-home-o'/>
               <b>首页</b>
@@ -29,7 +29,7 @@
                <van-icon  name='shopping-cart-o'/>
               <b>购物车</b>
             </a> -->
-            <a href="#/user/index">
+            <a href="/2">
               <!-- <i></i> -->
               <van-icon  name='manager-o'/>
               <b>个人中心</b>

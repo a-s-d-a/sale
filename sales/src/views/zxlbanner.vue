@@ -75,6 +75,11 @@ export default {
         this.list = res.data.response.advert.top;
         this.List=res.data.response;
         console.log(this.List);
+      })
+      .then(res => {
+        this.list = res.data.response.advert.top;
+        this.List=res.data.response;
+        console.log(this.List);
       });
   },
    methods:{

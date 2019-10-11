@@ -2,7 +2,7 @@
    <div class="S_active u_details">
         <div class="m_info">
           <div class="c_carousel">
-            <img :src="'https://img2.yidejia.com/'+com" alt />
+            <img :src="'https://img2.yidejia.com/'+com" />
           </div>
           <h2>{{iteminfo.goods_name}}</h2>
           <div class="l_price">
@@ -160,7 +160,8 @@ data(){
      com(){
          if(this.iteminfo.imgname){
              return this.iteminfo.imgname;
-             
+         }else if(this.iteminfo.img_name){
+           return this.iteminfo.img_name
          }else{
              return this.iteminfo.carousel_image[0];
          }
@@ -169,7 +170,7 @@ data(){
    created(){
        this.iteminfo=this.$route.query.item
        console.log(this.iteminfo)
-       console.log(com)
+      
    },
   
 }

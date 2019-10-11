@@ -15,6 +15,7 @@ export default new Router({
     // mode: 'history',
     routes: [{
             path: '/',
+            name: '/',
             components: {
                 nav: zxlt,
                 default: zxlbanner
@@ -22,30 +23,35 @@ export default new Router({
         },
         {
             path: '/1',
+            name: '/1',
             components: {
                 nav: zxlnav1,
                 default: zxlxiang,
             }
         }, {
             path: '/tu',
+            name: '/tu',
             components: {
                 nav: zxlnav1,
                 default: zxltuwen,
             }
         }, {
             path: '/xiang',
+            name: '/xiang',
             components: {
                 nav: zxlnav1,
                 default: zxlxiang,
             }
         }, {
             path: '/ping',
+            name: '/ping',
             components: {
                 nav: zxlnav1,
                 default: zxlping,
             }
         }, {
             path: '/car',
+            name: '/car',
             components: {
                 nav: zxlnav1,
                 default: zxlcart,

@@ -59,23 +59,20 @@ console.log(this.$store.getters.data)
            num:1
        }
    },
-   created(){
-
-   },
     computed:{
      com(){
-         if(this.infor.imgname){
-             return this.infor.imgname;
-             
+         if(this.infor.img_name){
+             return this.infor.img_name
+         }else if(this.infor.imgname){
+           return this.infor.imgname
          }else{
-             return this.infor.carousel_image[0];
+             return this.infor.carousel_image[0]
          }
      }
  },
   created(){
        this.infor=this.$route.query.item
        console.log(this.infor)
-       
    },
 };
 </script>
